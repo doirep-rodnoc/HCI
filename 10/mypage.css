@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background-color: #345376;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	transform: translate3d(0,0,0);
+	backface-visibility: hidden
+}
+html, body {
+	height: 100%;
+}
+header{
+	width: 100%;
+	background-color: #45485e;
+	background-position: 50% 50%;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
+	z-index: 10;
+}
+.header-contents{
+	box-sizing:border-box;
+	max-width: 960px;
+	margin: 0 auto;
+	min-height: 100px;
+	background-image: url(shinshu-logo.png);
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+}
+.header-contents h1,
+.header-contents h2{
+	margin: 0;
+    margin-left: 10px;
+	color: #fff;
+	line-height: 1;
+}
+.header-contents h1{
+	padding: 30px 0 10px 85px;
+	font-size: 24px;
+}
+.header-contents h2{
+	padding: 0 0 0 85px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.main-style{
+	position: relative;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+a{
+	color: #006633;
+	text-decoration: none;
+}
+a:hover{
+	color: #2b4131;
+	text-decoration: underline;
+}
+
+@media (max-width: 600px){
+	header{
+		background-position: 32% 50%;
+		border-top: #292a37 35px solid;
+	}
+	.header-contents{
+		min-height: 60px;
+		background-size: 40px 40px;
+		background-position: 10px 50%;
+	}
+	.header-contents h1{
+		padding: 15px 0 5px 55px;
+		font-size: 16px;
+	}
+	.header-contents h2{
+		padding: 0 0 0 55px;
+		font-size: 12px;
+	}
+}
+
+.main-style h1{
+	text-align: center;
+	color: #0e0e0e;
+	text-shadow: 2px 2px 3px #45485e;
+}
+.main-style p{
+	text-align: center;
+	color: #adadad;
+	text-shadow: 5px 5px 3px #45485e;
+}
+
+
+.bear{
+	opacity: 100;
+	position: relative;
+	left: 50%;
+	width: 100%;
+}
+
+#bear_head, #bear_body, #bear_hand{
+	position: absolute;
+	text-align: center;
+}
+
+#bear_head{
+	left: 0px;
+	top: 20px;
+}
+
+#bear_body{
+	top: 190px;
+	left: 22px;
+}
+
+#bear_hand{
+	top: 100px;
+	left: -218px;
+	transform-origin: 95% 60%;
+	transform: rotate(0deg);
+}
+
+.foreground{
+	opacity: 100%;
+	position: absolute;
+	transform: translate(0, 0);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgb(255, 253, 239);
+}
+
+#fishLine{
+	position: absolute;
+	left: -220px;
+	top: 130px;
+
+}
+
+#fish{	
+	position: absolute;
+	transform: rotate(90deg);
+	left: -273px;
+	top: 450px;
+}
+
+#caption h1{
+	position: relative;
+	top: -50px;
+	color: #dbeae3;
+}
+
+#ice{
+	position: absolute;
+	left: -300px;
+	top: 200px;
+}
+
+#omedetou{
+	transform: scale(0);
+	opacity: 0;
+	position: fixed;
+	width: 80%;
+	padding: 0% 10%;
+}
+

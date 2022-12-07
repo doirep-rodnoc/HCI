@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>おさかなログインフォーム(仮)</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>おさかな</h1>
+<h2>ログイン</h2>
+</div>
+</header>
+<canvas class="background"></canvas>
+<div class="main-style">
+    <section class="main-section">
+        <div id="caption">
+            <h1>ログイン</h1>
+            <p>ユーザーネームとパスワードを入力してください．</p>
+        </div>
+
+        <div class="bear">  
+            <img id="bear_body" src="images/polarbear_fishing_body.png">
+            <img id="bear_head" src="images/polarbear_fishing_head.png">
+            <img id="bear_hand" src="images/polarbear_fishing_hand.png">
+        </div>
+
+        <div class="fishingTools">        
+            <div id="fishHook">     
+                <img id="fishHookImg" src="images/釣り針.png" height="120px">
+                <canvas id="collider" width="50px" height="90px"></canvas>
+            </div>
+            <img id="fishLine" src="images/釣り糸.png" height="500px">
+        </div>
+
+        <div class="fishForm">        
+            <img id="fish" src="images/sakana.png">
+            <div class="userInput">
+                <span>ユーザーネーム:</span>
+                <input name="uname" id="uName" class="inputField" type="text" placeholder="ここに入力" required>
+                <span>パスワード:</span>
+                <input name="pwd" id="pwdField" class="inputField" type="password" placeholder="ここに入力" required>               
+            </div>
+
+            <div class="regButtonField">
+                <button id="regBtn" type="submit">ログイン</button>
+                <div id="fxChkDiv">
+                    <input id="effectChk" type="checkbox" name="effectChk">
+                    <label for="effectChk">ログイン演出をスキップ</label> 
+                </div>
+                <div id="errmsg" style="text-align: center; color:rgb(252, 110, 110);"></div>
+            </div>
+        </div>
+
+        <div id="tsurarero"></div>
+    </section>
+</div>
+<canvas class="foreground"></canvas>
+<footer><a href="license.html">ライセンス情報</a></footer>
+<script src="scripts/bubbly-bg.js"></script>
+<script src="scripts/gsap.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
