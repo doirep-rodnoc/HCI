@@ -1,6 +1,6 @@
 
-const username = "20t2153j";
-const pwd = "hogehoge";
+const username = "user";
+const pwd = "password";
 
 
 const errorSound = new Audio('sounds/fail.mp3');
