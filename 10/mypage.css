@@ -152,6 +152,7 @@ a:hover{
 	position: relative;
 	top: -50px;
 	color: #dbeae3;
+	cursor: pointer;
 }
 
 #ice{
@@ -160,11 +161,4 @@ a:hover{
 	top: 200px;
 }
 
-#omedetou{
-	transform: scale(0);
-	opacity: 0;
-	position: fixed;
-	width: 80%;
-	padding: 0% 10%;
-}
 
