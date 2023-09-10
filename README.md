@@ -1,4 +1,4 @@
-## HCIの授業での制作物
+## 授業での制作物
 #10「つられるインタラクション」
 https://doirep-rodnoc.github.io/HCI/10/
 
